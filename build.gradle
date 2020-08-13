@@ -66,6 +66,10 @@ dependencies {
     testCompile "org.grails:grails-web-testing-support"
     testCompile "org.grails:views-json-testing-support"
     testCompile "org.hibernate.validator:hibernate-validator:6.0.20.Final"
+
+    // diff from clean rest-api profile
+    provided files('external-config')
+    compile "org.grails.plugins:external-config:2.0.0"
 }
 
 bootRun {
