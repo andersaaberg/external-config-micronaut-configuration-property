@@ -114,6 +114,10 @@ environments:
                 testOnReturn: false
                 jdbcInterceptors: ConnectionState
                 defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
+grails:
+    config:
+        locations:
+            - classpath:my-external-config.yml
 
 # this will be included in MyConfiguration
 #my:
